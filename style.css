@@ -1,112 +1,231 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-    padding-top: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1;
 }
 
-.span-title {
-    font-size: large;
-    font-weight: bold;
-    padding-right: 300px;
-    padding-left: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 0px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ol,
+ul {
+  list-style: none;
 }
 
-.navigate-orientir {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; 
+blockquote,
+q {
+  quotes: none;
 }
 
-.span-nav {
-    padding-top: 50px;
-    padding-right: 170px;
-    padding-bottom: 50px;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.div-nav-end {
-    text-align: end;
-}
-
-.desire-photo img {
-   /* CSS style is was here. Really. */
-}
-
-.photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-
-.text {
-    padding-top: 50px;
-    margin-left: 50px; 
+@media screen and (max-width: 1800px) {
+  body {
+    font-size: 1.5em;
     margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+body .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .navbar .navbar-element {
+  margin: 1.5em;
+}
+body .navbar .navbar-element a {
+  text-decoration: none;
+  color: black;
+}
+body .main-photo {
+  display: flex;
+  justify-content: center;
+}
+body .text {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  font-size: 1.2em;
+  text-align: justify;
+}
+body .text h2 {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+body .p-style {
+  color: lightgrey;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+body .photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+body .photo-element {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+body .photo-element h3 {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+body input {
+  outline: none;
+  border: none;
+}
+body .img-email {
+  border: none;
+  width: 10px;
+}
+body .email-style {
+  text-align: center;
+  padding: 100px;
+}
+body .load-more {
+  font-size: larger;
+  color: black;
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 45%;
+}
+body .footer {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .footer1 {
+  display: flex;
+  flex-direction: row;
 }
 
-.p-style {
-    color: lightgrey;
-    
-}
-
-.p-style a {
-    color: lightgrey;
-}
-
-input {
-    outline: none;
-    border: none;
-}
-
-.img-email {
-    border: none;
-    width: 10px;
-}
-
-.email-style {
-    text-align: center;
-    padding: 100px;
-}
-
-.load-more {
-    font-size: larger;
-    color: black;
-    border: 1px solid black;
-    width: 200px;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 45%;
-}
-
-.footer {
-    padding-top: 200px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-}
-
-.footer1 {
-    display: flex;
-    flex-direction: row;
-}
+/*# sourceMappingURL=style.css.map */

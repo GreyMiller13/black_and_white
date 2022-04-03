@@ -1,0 +1,117 @@
+@import 'reset';
+
+$text_color1: lightgrey;
+$text_color2: black;
+
+body {
+    @media screen and (max-width: 1800px) {
+        font-size: 1.5em;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .navbar-element {
+            margin: 1.5em;
+
+            a {
+                text-decoration: none;
+                color: $text_color2;
+            }
+        }
+    }
+
+    .main-photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        font-size: 1.2em;
+        text-align: justify;
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+    }
+
+    .p-style {
+        color: $text_color1;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .photo-element {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+        h3 {
+            font-weight: bold;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    input {
+        outline: none;
+        border: none;
+    }
+    
+    .img-email {
+        border: none;
+        width: 10px;
+    }
+    
+    .email-style {
+        text-align: center;
+        padding: 100px;
+    }
+
+    .load-more {
+        font-size: larger;
+        color: black;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 45%;
+    }
+    
+    .footer {
+        padding-top: 200px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+    
+    .footer1 {
+        display: flex;
+        flex-direction: row;
+    }
+}
